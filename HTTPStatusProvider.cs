@@ -7,102 +7,128 @@ using Apis;
 
 namespace HttpStatusLibrary
 {
-    internal class HTTPStatusProvider
+    public class HTTPStatusProvider
     {
-        public static HttpStatusInfo.HttpStatusDto GetOk(int code, string codeMessage) 
+        public static HttpStatusInfo.HttpStatusDto GetOk() 
         {
-            return new HttpStatusInfo.HttpStatusDto
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.Ok;
+            
+
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
             {
-                Code = code,
-                CodeName = codeMessage
-
-
-            };    
-        }
-
-        public static HttpStatusInfo.HttpStatusDto NoContent(int code, string codeMessage)
-        {
-            return new HttpStatusInfo.HttpStatusDto
-            {
-                Code = code,
-                CodeName = codeMessage
+                Code = (int) statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
 
 
             };
+
+            return httpsstatusinfo;
         }
 
-
-
-
-        public static HttpStatusInfo.HttpStatusDto Found(int code, string codeMessage)
+        public static HttpStatusInfo.HttpStatusDto NoContent()
         {
-            return new HttpStatusInfo.HttpStatusDto
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.NoContent;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
             {
-                Code = code,
-                CodeName = codeMessage
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
 
 
             };
-        }
 
-
-        public static HttpStatusInfo.HttpStatusDto BadRequest(int code, string codeMessage)
-        {
-            return new HttpStatusInfo.HttpStatusDto
-            {
-                Code = code,
-                CodeName = codeMessage
-
-
-            };
-        }
-
-
-        public static HttpStatusInfo.HttpStatusDto Forbidden(int code, string codeMessage)
-        {
-            return new HttpStatusInfo.HttpStatusDto
-            {
-                Code = code,
-                CodeName = codeMessage
-
-
-            };
-        }
-
-        public static HttpStatusInfo.HttpStatusDto NotFound(int code, string codeMessage)
-        {
-            return new HttpStatusInfo.HttpStatusDto
-            {
-                Code = code,
-                CodeName = codeMessage
-
-
-            };
-        }
-
-
-        public static HttpStatusInfo.HttpStatusDto BadGateway(int code, string codeMessage)
-        {
-            return new HttpStatusInfo.HttpStatusDto
-            {
-                Code = code,
-                CodeName = codeMessage
-
-
-            };
+            return httpsstatusinfo;
         }
 
 
 
-        public static HttpStatusInfo.HttpStatusDto GatewayTimeout(int code, string codeMessage)
+
+        public static HttpStatusInfo.HttpStatusDto Found()
         {
-            return new HttpStatusInfo.HttpStatusDto
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.Found;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
             {
-                Code = code,
-                CodeName = codeMessage
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
 
 
             };
+
+            return httpsstatusinfo;
+        }
+
+
+        public static HttpStatusInfo.HttpStatusDto BadRequest()
+        {
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.BadRequest;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
+            {
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
+
+
+            };
+
+            return httpsstatusinfo;
+        }
+
+
+        public static HttpStatusInfo.HttpStatusDto Forbidden()
+        {
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.Forbidden;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
+            {
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
+
+
+            };
+
+            return httpsstatusinfo;
+        }
+
+        public static HttpStatusInfo.HttpStatusDto NotFound()
+        {
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.NotFound;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
+            {
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
+
+
+            };
+
+            return httpsstatusinfo;
+        }
+
+
+        public static HttpStatusInfo.HttpStatusDto BadGateway()
+        {
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.BadGateway;
+            var httpsstatusinfo = new HttpStatusInfo.HttpStatusDto
+            {
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
+
+
+            };
+
+            return httpsstatusinfo;
+        }
+
+
+
+        public static HttpStatusInfo.HttpStatusDto GatewayTimeout()
+        {
+            StatusCodesEnum statusCodesEnum = StatusCodesEnum.GatewayTimeout;
+            var httpsstatusinfo =  new HttpStatusInfo.HttpStatusDto
+            {
+                Code = (int)statusCodesEnum,
+                CodeName = statusCodesEnum.ToString(),
+
+
+            };
+
+            return httpsstatusinfo;
         }
 
 

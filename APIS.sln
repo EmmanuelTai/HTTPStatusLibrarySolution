@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPStatusLibrary", "HTTPStatusLibrary.csproj", "{A4C0FF8D-1F8C-4FE1-AD26-90EDCD42F0FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpStatusTestApp", "..\TestApp\HttpStatusTestApp.csproj", "{8B024F31-7464-4C4F-8642-09A4575A8CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A4C0FF8D-1F8C-4FE1-AD26-90EDCD42F0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4C0FF8D-1F8C-4FE1-AD26-90EDCD42F0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4C0FF8D-1F8C-4FE1-AD26-90EDCD42F0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B024F31-7464-4C4F-8642-09A4575A8CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B024F31-7464-4C4F-8642-09A4575A8CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B024F31-7464-4C4F-8642-09A4575A8CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B024F31-7464-4C4F-8642-09A4575A8CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
