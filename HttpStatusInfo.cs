@@ -1,6 +1,7 @@
-﻿namespace HTTPStatusLibrary
+﻿namespace Apis
+
 {
-    public class Class1
+    public class HttpStatusInfo
     {
 
         public enum StatusCodesEnum
@@ -18,8 +19,8 @@
     
         public record HttpStatusDto
         {
-            int Code { get; init; }
-            string CodeName
+            public int Code { get; set; }
+            public string CodeName { get; set; }
         }
     }
 }
